@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+.header {
+  background: black;
+  height: 80px;
+  width: 800px;
+  margin: 0px auto;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  font-family: "Pomporri Demo";
+  font-size: 36px;
+  -webkit-text-stroke: 1px #19BABA;
+}
+
+tr.input-label {
+  padding-left: 620px;
+  margin: 0px auto;
+}
+
+.content {
+  color: white;
+  font-family: "kg pdx bridgetown";
+  font-size: 28px;
+  padding-left: 580px;
+}
+
+input[type=integer]
+{
+    background-color: #536E8A;
+    border:solid 1px #536E8A;
+    color: white;
+    height: 28px;
+    padding-left:20px;
+    width: 191px;
+    box-shadow: 2px 2px 0 #19BABA inset;
+}
