@@ -2,6 +2,13 @@ body {
   background-color: black;
 }
 
+#filler,
+#weekAllowance,
+#perDayAllowance,
+#perDayAllowanceTag {
+  display: none;
+}
+
 .header {
   background: black;
   height: 80px;
@@ -14,11 +21,11 @@ body {
   text-align: center;
   font-family: "Pomporri Demo";
   font-size: 36px;
-  -webkit-text-stroke: 1px #19BABA;
+  -webkit-text-stroke: 1px #00B85C;
 }
 
-tr.input-label {
-  padding-left: 620px;
+#input-label {
+  padding-left: 400px;
   margin: 0px auto;
 }
 
@@ -26,7 +33,7 @@ tr.input-label {
   color: white;
   font-family: "kg pdx bridgetown";
   font-size: 28px;
-  padding-left: 580px;
+  padding-left: 505px;
 }
 
 input[type=integer]
@@ -36,6 +43,66 @@ input[type=integer]
     color: white;
     height: 28px;
     padding-left:20px;
-    width: 191px;
-    box-shadow: 2px 2px 0 #19BABA inset;
+    width: 145px;
+    box-shadow: 2px 2px 0 #00B85C inset;
+}
+
+button {
+  font-family: "kg pdx bridgetown";
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  background: black;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.button {
+  padding-left:572px;
+}
+
+#weekAllowance {
+  color: #00B85C;
+  font-size: 42px;
+  font-family: "kg pdx bridgetown";
+  -webkit-text-stroke: .4px white;
+  margin: 0px auto;
+  padding-left: 238px;
+}
+
+#allowance {
+  padding-left: 372px;
+  color: white;
+  font-family: "kg pdx bridgetown";
+  font-size:28px;
+}
+
+#filler {
+  padding-left: 250px;
+}
+
+#perDayAllowance {
+  color: #00B85C;
+  font-size: 42px;
+  font-family: "kg pdx bridgetown";
+  -webkit-text-stroke: .4px white;
+  margin: 0px auto;
+  padding-left: 245px;
+}
+
+#perDayAllowanceTag {
+  padding-left: 240px;
+  font-size: 28px;
+}
+
+.days {
+  color: white;
+  font-family: "kg pdx bridgetown";
+}
+
+.buttonTwo {
+  color: white;
+  padding-left:240px;
+  font-weight:bold;
 }

@@ -3,6 +3,9 @@
 <head>
   <title>simpleBudget</title>
   <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+  <script src="http://d3js.org/d3.v2.js"></script>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script src="application.js"></script>
 </head>
 <body>
   <div class= "header">
@@ -12,25 +15,72 @@
   <div class= "content">
     <tr>
       <td id="input-label">
-        Weekly Total:
-      <br><br>
-      </td>
-
-      <td>
-        $ <input type="integer" name="week_total" id="weekTotal">
+        Weekly Total Income:$ <input type="integer" name="week_total" id="weekTotal">
       </td></br>
 
       <td id="input-label"></br>
-        Weekly Bills:
-        <br><br>
-      </td>
-
-      <td>
-          $ <input type="integer" name="week_bills" id="weekBills">
+        Weekly Bills:$ <input type="integer" name="week_bills" id="weekBills">
       </td>
     </tr>
+    <br>
+    <br>
   </div>
-      <script src="jquery.min.js"></script>
-      <script src="applicaton.js"></script>
+  <div class="button">
+    <tr>
+      <td><button onclick="per_day_calc()">Make a Budget </button></td>
+    </tr>
+  </div>
+  <div id="allowance">
+      <h1> Your total allowance this week:
+      </h1>
+      <p id="weekAllowance">
+      </p>
+      <h1 id="filler">
+      </h1>
+      <p id="perDayAllowance">
+        <p id="perDayAllowanceTag">
+
+        <p>
+      </p>
+      <button class="buttonTwo" onclick="graph()"> Graph it </button>
+  </div>
+  <!-- <div class= "days">
+    <tr>
+      <td id= "monday"> Monday <br>
+        <input type="integer" name="monday_total" id="mondayTotal">
+      </td>
+      <br>
+      <td id= "tuesday"> Tuesday <br>
+        <input type="integer" name="tuesday_total" id="tuesdayTotal">
+      </td>
+      <br>
+      <td> Wednesday <br>
+        <input type="integer" name="wednesday_total" id="wednesdayTotal">
+      </td>
+      <br>
+      <td> Thursday <br>
+        <input type="integer" name="thursday_total" id="thursdayTotal">
+      </td>
+      <br>
+      <td> Friday <br>
+        <input type="integer" name="friday_total" id="fridayTotal">
+      </td>
+      <br>
+      <td> Saturday <br>
+        <input type="integer" name="saturday_total" id="saturdayTotal">
+      </td>
+      <br>
+      <td> Sunday <br>
+        <input type="integer" name="sunday_total" id="sundayTotal">
+      </td>
+      <br>
+      <td> Net Savings <br>
+        <input type="integer" name="week_savings_total" id="weekSavingsTotal">
+      </td>
+    </tr>
+  </div> -->
+  <div id="graph">
+
+  </div>
 </body>
 </html>
