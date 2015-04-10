@@ -5,7 +5,8 @@ body {
 #filler,
 #weekAllowance,
 #perDayAllowance,
-#perDayAllowanceTag {
+#perDayAllowanceTag,
+.buttonTwo {
   display: none;
 }
 
@@ -103,6 +104,27 @@ button {
 
 .buttonTwo {
   color: white;
-  padding-left:240px;
+  padding-left:235px;
   font-weight:bold;
+}
+
+.graph {
+  display:none;
+  color: white;
+  font-family: "kg pdx bridgetown";
+  font-size: 32px;
+  padding-left: 400px;
+}
+
+#perDay {
+  padding-left: 240px;
+  color: white;
+  font-family: "kg pdx bridgetown";
+  font-size:28px;
+}
+
+.line {
+  stroke: white;
+  stroke-width: 1.5px;
+  stroke-linecap: round;
 }
